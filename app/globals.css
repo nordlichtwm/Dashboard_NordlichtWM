@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Dein globaler Stil === */
+
+/* Sauberer Font & Hintergrund für den ganzen Body */
+body {
+  @apply bg-gray-100 text-gray-800 antialiased;
+}
+
+/* Schöne Überschriften */
+h1,
+h2,
+h3,
+h4 {
+  @apply font-bold text-gray-800;
+}
+
+/* Schöne Links */
+a {
+  @apply text-blue-600 hover:underline;
+}
+
+/* Eingabefelder: einheitlich, smooth Focus */
+input,
+select {
+  @apply border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200;
+}
+
+/* Tabellen: klarer Stil */
+table {
+  @apply w-full border-collapse;
+}
+
+th,
+td {
+  @apply border border-gray-200 px-3 py-2;
+}
+
+th {
+  @apply bg-gray-100 text-left font-medium;
+}
+
+tr:nth-child(even) {
+  @apply bg-gray-50;
+}
